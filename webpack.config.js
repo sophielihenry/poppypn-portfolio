@@ -6,6 +6,7 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const HtmlReplaceWebpackPlugin = require('html-replace-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 const CONFIG = {
     entry: './src/js/app.js',
@@ -54,10 +55,15 @@ const CONFIG = {
     module: {
       rules: [
         {
+          test: /\.js$/, // files ending with .js
+          exclude: /node_modules/, // exclude the node_modules directory
+          loader: "babel-loader" // use this (babel-core) loader
+        },
+        {
           test:/\.(s*)css$/,
           use: ExtractTextPlugin.extract({
             fallback: "style-loader",
-            use:['css-loader', 'sass-loader']
+            use:['css-loader', 'postcss-loader', 'sass-loader']
           })
         },
         {
