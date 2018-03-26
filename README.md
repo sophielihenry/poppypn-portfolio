@@ -11,12 +11,12 @@ This project is based on https://github.com/Dugnist/html5-boilerplate
 ```
   git clone https://github.com/kLOsk/html5-boilerplate-sass.git my_project
   cd my_project
-  npm i
+  npm install
 ```
 
 Edit files in /src folder
 
-To run the development version with live reload etc:
+To run the development version with live reload, etc:
 
 ```
   npm run watch
@@ -37,3 +37,5 @@ You can add Bootstrap 4 by running:
 ```
   npm install jquery popper.js bootstrap
 ```
+
+Make sure to uncomment the loaders in app.js and style.scss. Bootstrap4 is then ready to go!
