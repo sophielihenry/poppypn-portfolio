@@ -1,27 +1,39 @@
-<p align="center">
-  <img width="120" src="http://www.logicstudio.net/spa/wp-content/uploads/2013/05/LogicStudio_HTML5.png" alt="html5-boilerplate" />
-</p>
+# HTML5-Boilerplate-Sass
 
-# html5-boilerplate
+HTML5 Boilerplate Sass is a simple HTML5 Boilerplate App that includes Sass (and optionally Bootstrap 4) to get simple Web Apps off the ground quickly.
 
-Get started
+It uses Webpack and Node, so you get all that sweet auto dependency management and Livereload :D
+
+This project is based on https://github.com/Dugnist/html5-boilerplate
+
+## Get started
 
 ```
-  git clone https://github.com/Dugnist/html5-boilerplate.git my_project
+  git clone https://github.com/kLOsk/html5-boilerplate-sass.git my_project
   cd my_project
   npm i
-  npm start
 ```
 
-Put your files into /src folder.
+Edit files in /src folder
 
-Don't forget add to index.html this line:
+To run the development version with live reload etc:
+
 ```
-  <script type="text/javascript" src="../build/app.js"></script>
+  npm run watch
 ```
 
-For build
+To run the production build:
 
 ```
   npm run build
+```
+
+Copy the content of /build to your production server for production deployment.
+
+## OPTIONAL
+
+You can add Bootstrap 4 by running:
+
+```
+  npm install jquery popper.js bootstrap
 ```

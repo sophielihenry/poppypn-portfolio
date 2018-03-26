@@ -35,7 +35,7 @@ const CONFIG = {
           replacement: ''
         }
       ]),
-      new ExtractTextPlugin('css/app.css'),
+      new ExtractTextPlugin('css/app.bundle.css'),
       new OptimizeCssAssetsPlugin({
         cssProcessorOptions: { discardComments: { removeAll: true } }
       }),
@@ -54,10 +54,10 @@ const CONFIG = {
     module: {
       rules: [
         {
-          test: /\.css$/,
+          test:/\.(s*)css$/,
           use: ExtractTextPlugin.extract({
             fallback: "style-loader",
-            use: "css-loader"
+            use:['css-loader', 'sass-loader']
           })
         },
         {
@@ -74,7 +74,7 @@ const CONFIG = {
     devServer: {
       contentBase: path.join(__dirname, "src"),
       compress: true,
-      port: 3001,
+      port: 3010,
       hot: false,
       watchContentBase: true,
       noInfo: true

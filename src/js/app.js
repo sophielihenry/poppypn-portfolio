@@ -1,6 +1,10 @@
 'use strict';
 
-require('../css/app.css');
+/**Optionally add Bootstrap to your project**/
+//import 'bootstrap';
+
+import '../css/style.scss';
+
 
 /********** Paste your code here! ************/
 
