@@ -9,7 +9,7 @@ This project is based on https://github.com/Dugnist/html5-boilerplate
 ## Get started
 
 ```
-  git clone https://github.com/kLOsk/html5-boilerplate-sass.git my_project
+  git clone git@github.com:dionfananie/html5-boilerplate-sass-tailwind.git my_project
   cd my_project
   npm install
 ```
@@ -32,10 +32,10 @@ Copy the content of /build to your production server for production deployment.
 
 ## OPTIONAL
 
-You can add Bootstrap 4 by running:
+You can add TailwindCSS by running:
 
 ```
-  npm install jquery popper.js bootstrap
+  npm install tailwindcss
 ```
 
-Make sure to uncomment the loaders in app.js and style.scss. Bootstrap4 is then ready to go!
+Make sure to uncomment the loaders in app.js and style.scss. Tailwind is then ready to go!
