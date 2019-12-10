@@ -1,8 +1,7 @@
 'use strict';
 
 /**Optionally add Bootstrap to your project**/
-//import 'bootstrap';
-
+// import'tailwindcss';
 import '../css/style.scss';
 
 

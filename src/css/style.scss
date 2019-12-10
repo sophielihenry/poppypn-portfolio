@@ -14,8 +14,13 @@
 # Components
 --------------------------------------------------------------*/
 /**Optionally add Bootstrap to your project**/
-/* @import "~bootstrap/scss/bootstrap"; */
+@import "~tailwindcss/base";
+
+@import "~tailwindcss/components";
+
+@import "~tailwindcss/utilities";
 @import "app";
+
 
 /*--------------------------------------------------------------
 # Responsive Bug Fixes
