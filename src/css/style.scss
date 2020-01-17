@@ -26,3 +26,21 @@
 # Responsive Bug Fixes
 --------------------------------------------------------------*/
 @import "media";
+
+.image {
+  @apply object-cover h-auto w-full pb-3;
+}
+
+.icon {
+  @apply h-10 w-10; 
+}
+
+.invert {
+   z-index: 2; 
+   mix-blend-mode: exclusion;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
