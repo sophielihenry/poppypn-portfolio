@@ -8,7 +8,7 @@ module.exports = {
     		'green': '#A8C256',
     	},
     	fontFamily: {
-  			'standard': 'Gothic A1',
+  			  'sans': 'Helvetica',
   		},
       fontSize: {
         'big': '53px',
